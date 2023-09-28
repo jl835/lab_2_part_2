@@ -1,48 +1,91 @@
+<!doctype html>
 <html lang="en">
-        <head>
-            <meta charset="utf-8">
-            <title>Landing</title>
-        </head>
-        <body>
-                <img src="img/moon_header_3.jpg" alt="Moon Header">
-                <h1>Trip to the South Pole</h1>
-                <h2>Russia's Attempt</h2>
+
+<head>
+    <meta charset="utf-8">
+    <title>Landing</title>
+</head>
+
+<body>
+    <header>
+        <img src="img/moon_header_3.jpg" alt="Moon Header">
+        <h1>SpaceStuff Today</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#moon">South Pole Trip</a></li>
+            <li><a href="#webb">Latest News</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="moon">
+            <h2>South Pole Trip</h2>
+            
+            <article>
+                <h3>Russia's Attempt</h3>
                 <p>
-                        Russian spaceship <a href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=LUNA-25">Luna-25</a> failed its mission in trying to land on the 
-                        South Pole of the Moon. In the race to be the first, the ship flew erratically and crashed onto the surface.
-                        One of the main reasons for the voyage is the frozen water believed to be on that pole.
-                <ul>
-                        <li>Launched: August 10</li>
-                        <li>Country: Russia</li>
-                        <li>Success: No</li>
+                    Russian spaceship <a
+                        href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=LUNA-25">Luna-25</a>
+                    failed its mission in trying to land on the
+                    South Pole of the Moon. In the race to be the first, the ship flew erratically and crashed onto the
+                    surface.
+                    One of the main reasons for the voyage is the frozen water believed to be on that pole.
                 </p>
+                <ul>
+                    <li>Launched: August 10</li>
+                    <li>Country: Russia</li>
+                    <li>Success: No</li>
+                </ul>
                 <img src="img/luna_25_lavochkin-pic.jpg" alt="Russia Ship">
-                <h2>India's Attempt</h2>
+            </article>
+
+            <article>
+                <h3>India's Attempt</h3>
                 <p>
-                        On August 23rd, India made the first landing on the Moon's South Pole, racing against Russia. Chandrayaan-3, the unmanned moon lander, would be able to conduct
-                        tests on the Pole. This achievement is an important milestone for the country.
+                    On August 23rd, India made the first landing on the Moon's South Pole, racing against Russia.
+                    Chandrayaan-3,
+                    the unmanned moon lander, would be able to conduct
+                    tests on the Pole. This achievement is an important milestone for the country.
                 </p>
                 <img src="img/chandrayaan_3_change.jpg" alt="India Ship">
-                <h2>Latest News</h2>
-                <h3>Launch of James Webb Telescope</h3>
-                <p>
-                        In December 2021, the James Webb Telescope was launched from the reliable Ariane 5 rocket. One of the objectives of the telescope is to view the first galaxies created during the start of the universe.
-                </p>
-                <img src="img/nasa-logo-web-rgb.jpg" alt="Nasa Logo">
-                <h2>Got an interesting space fact?</h2>
-                <p>
-                <form action="https://api.sheetmonkey.io/form/iW4GKM2PcYuMXTWFU3BNYJ" method="POST">
-                        <label for="name">Name: </label>
-                        <input type="text" name="visitor_name" id="name" placeholder="Write your name"><br><br>
-                        <label for="email">Email: </label>
-                        <input type="email" name="visitor_email" id="email" placeholder="Write your email"><br><br>
-                        <label for="birth">date of birth: </label>
-                        <input type="date" name="visitor_dob" id="birth"<br><br>
-                        <label for="experience">Experience: </label>
-                        <textarea name="visitor_experience" id="experience" placeholder="Please share with us your experience." rows="3" cols="50"></textarea><br><br>
-                        <input type="submit" value="Submit">
+            </article>
+        </section>
+
+        <section id="webb">
+            <h2>Latest News</h2>
+            <h3>Launch of James Webb Telescope</h3>
+            <p>
+                In December 2021, the James Webb Telescope was launched from the reliable Ariane 5 rocket. One of the
+                objectives of the telescope is to view the first galaxies created during the start of the universe.
+            </p>
+            <img src="img/nasa-logo-web-rgb.jpg" alt="Nasa Logo">
+        </section>
+    </main>
+
+
+    <hr />
+    <aside>
+        <h2>Got an interesting space fact?</h2>
+        <form action="https://api.sheetmonkey.io/form/iW4GKM2PcYuMXTWFU3BNYJ" method="POST">
+            <label for="name">Name: </label>
+            <input type="text" name="visitor_name" id="name" placeholder="Write your name"><br><br>
+            <label for="email">Email: </label>
+            <input type="email" name="visitor_email" id="email" placeholder="Write your email"><br><br>
+            <label for="birth">date of birth: </label>
+            <input type="date" name="visitor_dob" id="birth" <br><br>
+            <label for="experience">Experience: </label>
+            <textarea name="visitor_experience" id="experience" placeholder="Please share with us your experience."
+                rows="3" cols="50"></textarea><br><br>
+            <input type="submit" value="Submit">
         </form>
-                        
-                </p>
-        </body>
+    </aside>
+
+    <footer>
+        &copy; SpaceStuff
+    </footer>
+</body>
+
 </html>
