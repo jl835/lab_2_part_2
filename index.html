@@ -4,12 +4,15 @@
 <head>
     <meta charset="utf-8">
     <title>Landing</title>
+    <link rel="stylesheet" href="css/mystyle.css">
 </head>
 
-<body>
+<body class="center">
     <header>
         <img src="img/moon_headerr.jpg" alt="Moon Header">
-        <h1>SpaceStuff Today</h1>
+        <div class="container">
+            <h1>SpaceStuff Today</h1>
+        </div>
     </header>
 
     <nav>
@@ -21,53 +24,73 @@
 
     <main>
 
-        <section id="moon">
+        <section id="moon" class="container">
             <h2>South Pole Trip</h2>
-            
-            <article>
-                <h3>Russia's Attempt</h3>
-                <p>
-                    Russian spaceship <a
-                        href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=LUNA-25">Luna-25</a>
-                    failed its mission in trying to land on the
-                    South Pole of the Moon. In the race to be the first, the ship flew erratically and crashed onto the
-                    surface.
-                    One of the main reasons for the voyage is the frozen water believed to be on that pole.
-                </p>
-                <ul>
-                    <li>Launched: August 10</li>
-                    <li>Country: Russia</li>
-                    <li>Success: No</li>
-                </ul>
-                <img src="img/luna_25_lavochkin-pic.jpg" alt="Russia Ship">
+            <article class="activity-row">
+                <div class="activity-col">
+                    <img src="img/luna_25_lavochkin-pic.jpg" alt="Russia Ship">
+                </div>
+                <div class="activity-col">
+                    <h3>Russia's Attempt</h3>
+                    <p>
+                        Russian spaceship <a
+                            href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=LUNA-25">Luna-25</a>
+                        failed its mission in trying to land on the
+                        South Pole of the Moon. In the race to be the first, the ship flew erratically and crashed onto
+                        the
+                        surface.
+                        One of the main reasons for the voyage is the frozen water believed to be on that pole.
+                    </p>
+                    <ul>
+                        <li>Launched: August 10</li>
+                        <li>Country: Russia</li>
+                        <li>Success: No</li>
+                    </ul>
+                </div>
+
             </article>
 
-            <article>
-                <h3>India's Attempt</h3>
-                <p>
-                    On August 23rd, India made the first landing on the Moon's South Pole, racing against Russia.
-                    Chandrayaan-3,
-                    the unmanned moon lander, would be able to conduct
-                    tests on the Pole. This achievement is an important milestone for the country.
-                </p>
-                <img src="img/chandrayaan_3_change.jpg" alt="India Ship">
+            <article class="activity-row">
+                <div class="activity-col">
+                    <h3>India's Attempt</h3>
+                    <p>
+                        On August 23rd, India made the first landing on the Moon's South Pole, racing against Russia.
+                        Chandrayaan-3,
+                        the unmanned moon lander, would be able to conduct
+                        tests on the Pole. This achievement is an important milestone for the country.
+                    </p>
+                </div>
+                <div class="activity-col">
+                    <img src="img/chandrayaan_3_change.jpg" alt="India Ship">
+                </div>
             </article>
         </section>
 
-        <section id="webb">
+        <section id="webb" class="container">
+            <hr>
             <h2>Latest News</h2>
-            <h3>Launch of James Webb Telescope</h3>
-            <p>
-                In December 2021, the James Webb Telescope was launched from the reliable Ariane 5 rocket. One of the
-                objectives of the telescope is to view the first galaxies created during the start of the universe.
-            </p>
-            <img src="img/nasa-logo-web-rgb.jpg" alt="Nasa Logo">
+            <article class="activity-row">
+                <div class="activity-col">
+                    <img src="img/nasa-logo-web-rgb.jpg" alt="Nasa Logo">
+                </div>
+                <div class="activity-col">
+                    <h3>Launch of James Webb Telescope</h3>
+                    <p>
+                        In December 2021, the James Webb Telescope was launched from the reliable Ariane 5 rocket. One
+                        of
+                        the
+                        objectives of the telescope is to view the first galaxies created during the start of the
+                        universe.
+                    </p>
+                </div>
+
+            </article>
         </section>
     </main>
 
 
-    <hr />
-    <aside>
+    <aside class="container">
+        <hr>
         <h2>Got an interesting space fact?</h2>
         <form action="https://api.sheetmonkey.io/form/iW4GKM2PcYuMXTWFU3BNYJ" method="POST">
             <label for="name">Name: </label>
